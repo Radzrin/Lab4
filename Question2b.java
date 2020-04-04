@@ -2,7 +2,7 @@ import java.util.*;
 
 //redo q2 but with loops
   
- public class Main{ 
+ public class Question2b{ 
     public static void main(String[] args) {
 		
 	System.out.println("please put in your email");
