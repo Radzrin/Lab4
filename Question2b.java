@@ -1,51 +1,46 @@
-import java.util.regex.Matcher; 
-import java.util.regex.Pattern; 
 import java.util.*;
+
+//redo q2 but with loops
   
- public class Question2 { 
- 
- /**
- *This is my main method
- */
-    public static boolean isValid(String email) {
+ public class Main{ 
+    public static void main(String[] args) {
 		
-		/*characters it has to refer to check if the email is valid or not
-		and the order of the email*/
-        
-		String characters = "^[a-zA-Z0-9_+&*-]+(?:\\."+ 
-                            "[a-zA-Z0-9_+&*-]+)*@" + 
-                            "(?:[a-zA-Z0-9-]+\\.)+[a-z" + 
-                            "A-Z]{2,7}$"; 
-                            
-                            
-        //check if the characters are present                              
-        Pattern pat = Pattern.compile(characters); 
+	System.out.println("please put in your email");
+	System.out.println("");
 		
-		//if you write nothing it will assume that it's false
-        if (email == null) 
-            return false; 
-        return pat.matcher(email).matches(); 
-    } 
-  
-    /* driver function to check */
-    public static void main(String[] args) 
-    { 
-		//variable
-        String email;
-        
-		//prompts the user for their email adress
-        System.out.println("insert your email here");
-        System.out.println("");
-        
-		//user enters their email adress
-        Scanner sc = new Scanner(System.in);
-        email = sc.nextLine();
-        
-		//outputs the result 
-        if (isValid(email)) {
-        System.out.print("This email valid"); 
-        }else {
-        System.out.print("This email is invalid maybe something is missing"); 
-		}
-    } 
-} 
+	Scanner sc = new Scanner(System.in);
+	//variables
+	String coma = ".";
+	String at = "@";
+	String email;
+	email = sc.nextLine();
+	int i = email.length();
+	    
+	    
+	 //check to see if the email is too long or too short
+	for (i =0; i <=254; i++) {
+        if (email ==null){
+          System.out.println("email invalid");
+          System.out.println("");
+        break;
+	} else if (i > 254){
+	    System.out.println("Email invalid: email is too long");
+	break;}
+	}
+         
+        //program checks if @ and . are present
+        for (i =0; i <=254; i++) {
+        if(email.charAt(i) == '@') { 
+          i++
+       break;}
+       
+        for (i =0; i <=254; i++) {
+        if(email.charAt(i) == '.') { 
+          i++;
+       }
+                
+      }
+     } 
+            
+   } 
+ } 
