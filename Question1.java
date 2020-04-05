@@ -23,7 +23,6 @@ import java.util.Scanner;
      }
 
         System.out.println("The sentence backwards is: \n" + reverse.trim());
-        System.out.println(smallWords);
         System.out.println("");
         
         System.out.println(smallWords.equals(reverse));
