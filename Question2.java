@@ -27,7 +27,7 @@ import java.util.*;
         return pat.matcher(email).matches(); 
     } 
   
-    /* driver function to check */
+    /* check  email*/
     public static void main(String[] args) 
     { 
 		//variable
