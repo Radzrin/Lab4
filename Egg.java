@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main{
+public class Egg{
 	public static void main(String[] args) {
 	  
 
@@ -13,7 +13,7 @@ public class Main{
 	    Num = sc.nextInt();
 	    System.out.println("Thank you for your cooperation");
 	    }catch (Exception e) {
-		System.out.println("put in a damn number");
+		System.out.println("put in a number come on");
 		//so try catch is like the end of the class
 	
 	    try{
@@ -23,7 +23,7 @@ public class Main{
 		System.out.println("");
 		System.out.println("Thank you for your cooperation");
 	    }catch (Exception f) {
-		System.out.println("screw you");
+		System.out.println("sigh, ok ending program");
 	    }
 	    } 
 	}        
